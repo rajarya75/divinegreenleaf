@@ -37,6 +37,15 @@ Premium Apartments Yelahanka,Premium Flats in Yelahanka,Flats near Ramanashree R
       padding-right: 0;
       padding-left: 0px;
     }
+
+    .am-input-container select {
+      top: 30px !important;
+    }
+
+    input[type="email"],
+    input[type="text"] {
+      padding: 0 !important;
+    }
   </style>
 </head>
 
@@ -743,31 +752,7 @@ Premium Apartments Yelahanka,Premium Flats in Yelahanka,Flats near Ramanashree R
         <div class="modal-body">
           <div class="container">
             <div class="contact-form">
-              <form method="POST" name="google-sheet" onsubmit="popenq_submit.disabled = true; return true;">
-                <!--<form method="POST" action="form.php" onsubmit="popenq_submit.disabled = true; return true;">-->
-                <div class="form-group">
-                  <input type="text" name="Name" id="Name" autocomplete="off" placeholder="Your Name" required>
-                  <!-- <span>Your name</span> -->
-                </div>
-                <!-- end form-group -->
-                <div class="form-group">
-                  <input type="tel" name="Ph_number" id="Ph_number" maxlength="10" autocomplete="off"
-                    placeholder="Your Phone Number" required>
-                  <!-- <span>Subject</span> -->
-                </div>
-                <!-- end form-group -->
-                <div class="form-group">
-                  <textarea name="Enquired_For" id="Enquired_For" autocomplete="off" placeholder="Message"
-                    required></textarea>
-                  <!-- <span>Your message</span> -->
-                </div>
-                <!-- end form-group -->
-                <div class="form-group">
-                  <button id="submit" type="submit" name="submit" style="background:#00302a">Submit</button>
-                </div>
-                <!-- end form-group -->
-              </form>
-              <!-- end form-group -->
+              <div id="anarock-form"></div>
             </div>
           </div>
         </div>
@@ -841,6 +826,18 @@ Premium Apartments Yelahanka,Premium Flats in Yelahanka,Flats near Ramanashree R
       });
     });
   </script>
+  <script>
+    var form_container = document.getElementById('anarock-form')
+    window.anarockForms = [{
+      container: form_container,
+      key: "97548e3de8f0d07c",
+      channel_name: "LandingPage ",
+      campaign_id: "GreenLeaf",
+      env: "production",
+      options: {}
+    }]
+  </script>
+  <script type="text/javascript" src="https://s3.ap-south-1.amazonaws.com/anarock.misc/form.js" async defer></script>
 </body>
 
 </html>
