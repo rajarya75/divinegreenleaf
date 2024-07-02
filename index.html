@@ -46,6 +46,20 @@ Premium Apartments Yelahanka,Premium Flats in Yelahanka,Flats near Ramanashree R
     input[type="text"] {
       padding: 0 !important;
     }
+
+    .visit-btn {
+      background-color: #00302a;
+      color: #fff;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      padding: 15px 20px;
+      font-weight: 600;
+    }
+
+    .visit-btn:hover {
+      color: #fff;
+    }
   </style>
 </head>
 
@@ -737,7 +751,8 @@ Premium Apartments Yelahanka,Premium Flats in Yelahanka,Flats near Ramanashree R
     <!-- end container -->
   </footer>
   <!-- end footer -->
-  <!-- Modal -->
+  <button class="btn visit-btn" onclick="changeHeader('Request Site Visit')" data-toggle="modal"
+    data-target="#exampleModal" href="divinegreenleaf.html">Request Site Visit</button>
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
