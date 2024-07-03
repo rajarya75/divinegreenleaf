@@ -855,6 +855,21 @@ Premium Apartments Yelahanka,Premium Flats in Yelahanka,Flats near Ramanashree R
     }
     ]
   </script>
+  <script>
+    $(document).ready(function () {
+      $('.af-primary').click(function () {
+        // console.log('firtttttttttttttt')
+        var name = document.getElementById('anarock-name').value;
+        var email = document.getElementById('anarock-email').value;
+        var phone = document.getElementById('anarock-phone').value;
+        if (name && email && phone) {
+          // console.log('seconddddddddddddddddddd')
+          window.location.href = 'thank-you.html';
+        }
+      });
+    });
+
+  </script>
 </body>
 
 </html>
