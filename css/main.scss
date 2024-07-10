@@ -683,6 +683,7 @@ body {
             line-height: 32px;
             padding-bottom: 10px;
         }
+
     }
 
     .highlight {
@@ -725,7 +726,7 @@ body {
         font-size: 10px;
         line-height: 22px;
         font-weight: 500;
-        right: -40px;
+        right: -48px;
     }
 
     .home .home-info h1 {
@@ -748,6 +749,11 @@ body {
         background-repeat: no-repeat;
     }
 
+    .about {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
     .about p {
         font-size: 14px;
         line-height: 24px;
@@ -759,8 +765,17 @@ body {
         margin-top: 10px;
     }
 
+    .about-bg {
+        display: none;
+    }
+
     .head h2 {
         font-size: 30px;
+    }
+
+    .highlight {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .highlight .head p {
@@ -768,22 +783,64 @@ body {
         line-height: 20px;
     }
 
-    .project .pc-item {
-        width: 86%;
-        margin: 10px auto;
+    .highlight .parent-tab .nav.nav-tabs .nav-link {
+        padding: 10px 30px;
     }
 
-    .project .pc-item .btn-mjr-outline {
-        padding: 10px 30px;
-        font-size: 14px;
+    .highlight .parent-tab .child-tab .nav .nav-item .nav-link {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+
+    .highlight .parent-tab .child-tab .tab-content .bhk-box {
+        margin-bottom: 30px;
+    }
+
+    .highlight .parent-tab .bhk-img img {
+        padding: 0;
+    }
+
+    .project {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .project .col-md-3 {
+        width: 48%;
+
+        &.ph-item p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    .plan,
+    .gallery,
+    .location {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .gallery {
+        .gallery-slider {
+            .mygallery {
+                img {
+                    height: 300px;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    .amenities {
+        padding-top: 0;
+        padding-bottom: 60px;
     }
 
     .amenities .amenities-box {
-        flex-wrap: wrap;
-
-        .a-item {
-            width: 46%;
-
+        .col-md-4 {
+            width: 48%;
         }
     }
 
@@ -800,6 +857,10 @@ body {
 
     .footer .footer-top {
         flex-wrap: wrap;
+    }
+
+    .footer .footer-top .left {
+        width: 100%;
     }
 
     .footer .footer-bottom .left {
