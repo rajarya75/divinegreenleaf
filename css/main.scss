@@ -236,9 +236,10 @@ body {
                     border-radius: 0;
                     text-transform: uppercase;
                     padding: 15px 50px;
+                    background: $white;
 
                     &.active {
-                        background: $primary;
+                        background: #2F6D5E;
                         color: $white;
                     }
                 }
@@ -248,138 +249,120 @@ body {
         .tab-content {
             margin-top: 40px;
         }
-    }
 
-}
+        .child-tab {
+            .nav {
+                .nav-item {
+                    margin: 8px;
 
-// Project
-.project {
-    padding-top: 100px;
-    padding-bottom: 120px;
+                    .nav-link {
+                        border: 2px solid #123F39;
+                        font-size: 16px;
+                        color: #02100E;
+                        font-weight: 700;
+                        border-radius: 0;
+                        text-transform: uppercase;
+                        padding: 15px 50px;
 
-    .head {
-        padding-bottom: 40px;
-    }
+                        &.active {
+                            background: #2F6D5E;
+                            color: $white;
+                        }
+                    }
+                }
+            }
 
-    .pc-item {
-        padding: 30px 16px;
-        border: 2px solid #E5E5E5;
-        border-radius: 20px;
-        margin-top: 20px;
-        text-align: center;
-        opacity: .6;
+            .tab-content {
+                .bhk-box {
+                    background: $white;
+                    border: 1px solid #123F39;
+                    padding: 40px 66px;
 
-        h3 {
-            font-size: 30px;
-            line-height: 45px;
-            font-weight: 700;
-            color: #161C2D;
+                    h5 {
+                        font-size: 22px;
+                        line-height: 24px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+            }
+
         }
 
-        p {
-            font-size: 28px;
-            line-height: 42px;
-            font-weight: 600;
-            color: #333333;
-            padding-top: 10px;
-        }
+        .bhk-img {
+            position: relative;
 
-        .btn-mjr-outline {
-            padding: 12px 39px;
-            border-radius: 6px;
-            border: 1.5px solid $primary;
-            font-size: 22px;
-            font-weight: 700;
-            color: #023F88;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
+            img {
+                padding-left: 30px;
+                margin-top: -15px;
+            }
 
-        &:hover {
-            opacity: 1;
-            border: 2px solid $primary;
-
-            .btn-mjr-outline {
-                background-color: $primary;
-                color: $white;
+            .btn-mjr {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-42%, -50%);
             }
         }
     }
+
 }
 
-
-// Location
-.location {
+// Project Highlight
+.project {
     padding-top: 100px;
-    padding-bottom: 120px;
-    position: relative;
+    padding-bottom: 90px;
 
     .head {
-        margin-bottom: 60px;
-    }
-
-    .path {
-        text-align: center;
-
-        img {
-            max-width: 650px;
-        }
-    }
-
-    .map-head {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding-top: 35px;
         padding-bottom: 40px;
-
-        h3 {
-            font-size: 26px;
-            line-height: 32px;
-            font-weight: 700;
-            color: $secondary;
-        }
     }
 
-    .map-item {
-        h4 {
-            font-size: 20px;
-            line-height: 32px;
+    .ph-item {
+
+        p {
+            font-size: 22px;
+            line-height: 30px;
             font-weight: 700;
-            color: $secondary;
-            margin-bottom: 0;
+            color: #2D2D2D;
+            padding-left: 8px;
+            border-left: 4px solid $primary;
+            margin-bottom: 40px;
+        }
+
+
+    }
+}
+
+// Plan
+.plan {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #123F39;
+
+    .head {
+        h2 {
+            color: $white;
         }
 
         p {
-            font-size: 16px;
-            line-height: 29px;
-            color: $secondary;
+            color: $white;
+            padding-bottom: 15px;
         }
     }
 
-    .left-art {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        opacity: 15%;
-        width: 550px;
-
+    .plan-img {
+        margin-top: 30px;
     }
 
-    .right-art {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        opacity: 15%;
-        width: 600px;
-    }
 }
 
 // Gallery
 .gallery {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #023F8812;
 
     .head {
         padding-bottom: 60px;
@@ -392,53 +375,86 @@ body {
         text-align: right;
         padding-top: 10px;
     }
-}
 
-// Plan
-.plan {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    position: relative;
+    .gallery-slider {
+        .mygallery {
+            div {
+                gap: 10px;
+            }
 
-    .plan-points {
-        text-align: center;
-        z-index: 1;
-        position: relative;
-
-        ul {
-            list-style-type: none;
-            max-width: 500px;
-            margin: 15px auto;
-
-            li {
-                text-align: left;
-                font-size: 17px;
-                line-height: 22px;
-                color: $secondary;
+            img {
+                height: 300px;
+                width: 92%;
             }
         }
 
-        .btn-mjr {
-            margin-top: 20px;
+        button.slick-prev.slick-arrow {
+            margin-left: 35px;
+            z-index: 1;
+        }
+
+        button.slick-next.slick-arrow {
+            margin-right: 35px;
+            z-index: 1;
+        }
+
+    }
+}
+
+
+// Location
+.location {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #B6CCC7;
+
+    .head {
+        margin-bottom: 60px;
+        text-align: left;
+
+        p {
+            font-size: 20px;
+            padding-top: 15px;
         }
     }
 
-    .plan-bg-left {
-        position: absolute;
-        left: 0px;
-        bottom: 0;
-        max-width: 490px;
-        opacity: 20%;
-        transform: rotate(90deg);
+    .contact {
+        border: 2px solid #123F39;
+        padding: 40px 50px;
+        background: $white;
+
+        h5 {
+            font-size: 32px;
+            line-height: 36px;
+            color: #02100E;
+            font-weight: 500;
+        }
+
+        .contact-box {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 35px;
+
+            h6 {
+                font-size: 22px;
+                color: #02100E;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 34px;
+                color: #02100E;
+            }
+
+            &.phone {
+                margin-bottom: 40px;
+            }
+        }
     }
 
-    .plan-bg-right {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        max-width: 500px;
-        opacity: 20%;
-    }
+
 }
 
 // Footer
@@ -451,6 +467,13 @@ body {
         padding-bottom: 10px;
 
         .left {
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+                color: $primary;
+                margin-bottom: 0;
+            }
+
             p {
                 padding: 10px 0;
                 font-size: 16px;
@@ -509,6 +532,21 @@ body {
             p {
                 margin-bottom: 0;
                 color: $secondary;
+
+                a {
+                    text-decoration: none;
+                    color: $secondary;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: $primary;
+                    }
+
+                    img {
+                        margin-top: -3px;
+                        margin-right: 5px;
+                    }
+                }
             }
         }
 
