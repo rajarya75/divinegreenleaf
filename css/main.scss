@@ -287,6 +287,13 @@ body {
                         font-size: 18px;
                         line-height: 32px;
                     }
+
+                    &.cta-only {
+                        height: 300px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
             }
 
